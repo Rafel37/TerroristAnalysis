@@ -1,2 +1,12 @@
+# Project - Analisis de ataque terroristas a nivel mundial
 
-![Rafa](https://avatars2.githubusercontent.com/u/28777746?s=60&v=4)
+
+## Descripción_
+
+Dataset que se ha usado en el proyecto:
+
+https://www.kaggle.com/START-UMD/gtd
+
+## Archivos:
+
+README.md : Descripción del proyecto
