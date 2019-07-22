@@ -1,7 +1,7 @@
 # Project - Analisis de ataque terroristas a nivel mundial
 
 
-## Descripción_
+## Descripción:
 
 Dataset que se ha usado en el proyecto:
 
