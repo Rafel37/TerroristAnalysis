@@ -7,6 +7,7 @@ class RowsAnalysis:
         FUNCIONES PARA:
             + LEER LA CANTIDAD DE COLUMNAS COLUMNAS
             + LEER LOS NULO POR COLUMNA
+            + SELECCIONAR LAS COLUMNAS QUE NOS INTERESAN
     """
 
     def rows_csv(df):
