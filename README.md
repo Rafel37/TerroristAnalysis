@@ -10,7 +10,7 @@ https://www.kaggle.com/START-UMD/gtd
 ## Archivos:
 
 + README.md : Descripción del proyecto
-
+```
 + code  
     |  
     |-- + Main : fichero principal desde el que se llaman a las demás clases y sus funciones.  
@@ -23,4 +23,4 @@ https://www.kaggle.com/START-UMD/gtd
                             sacar la cantidad de nulos en cada columna del dataset y seleccionar las columnas  
                             con las que queremos trabajar del dataset.  
     
-  
+```
