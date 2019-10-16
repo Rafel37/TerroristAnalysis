@@ -11,6 +11,7 @@ def main():
     RowsAnalysis.delete_null_columns(df)
     # rows_analysis.rows_csv(df)
     RowsAnalysis.read_number_of_null_values(df)
+    RowsAnalysis.rename_column(df)
     RowsAnalysis.select_columns(df)
     RowsAnalysis.read_number_of_null_values(df)
 

@@ -1,3 +1,3 @@
 
-data = './utils/globalterrorismdb.csv'
-data_modified = './utils/globalterrorismdb_modified.csv'
+data = '../dataset/globalterrorismdb.csv'
+data_modified = '../dataset/globalterrorismdb_modified.csv'

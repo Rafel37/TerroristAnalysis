@@ -17,7 +17,7 @@ class RowsAnalysis:
         :return: las columnas
         """
         size = df.shape
-        print(f'(filas, columnas) = {size}')
+        # print(f'(filas, columnas) = {size}')
         columns = size[1]
         print('NUMERO COLUMNAS ----- EXITO')
         return columns
@@ -30,7 +30,7 @@ class RowsAnalysis:
         """
         number_of_null_values = df.isnull().sum()
         print(number_of_null_values.sort_values())
-        print('NULOS COLUMNAS ----- EXITO')
+        print('NULOS COLUMNAS ----- EXITO' + '\n')
         return number_of_null_values
 
     def delete_null_columns(df):
@@ -48,9 +48,9 @@ class RowsAnalysis:
         ELIMINAR COLUMNAS QUE NO VAMOS A USAR PARA QUEDARNOS CON LAS QUE QUEREMOS
         :return: el DataFrame con las columnas que queremos
         """
-        list_columns_want = ['iyear', 'eventid', 'iyear', 'imonth', 'iday',	'country_txt', 'region_txt', 'provstate',
-                             'city', 'latitude', 'longitude', 'success', 'attacktype1_txt', 'targtype1_txt', 'gname',
-                             'weaptype1_txt']
+        list_columns_want = ['eventid', 'year', 'month', 'day',	'country', 'region', 'provstate',
+                             'city', 'latitude', 'longitude', 'success', 'attacktype', 'targtype', 'gname',
+                             'weaptype']
         # [column for column in list_columns_want if df[column] not in list_columns_want]
         for column in df:
             if column not in list_columns_want:
@@ -59,3 +59,23 @@ class RowsAnalysis:
                 print('I WANT THIS, NEXT COLUMN')
         print('SELECCION COLUMNAS  ----- EXITO' + '\n')
         return df
+
+
+    def rename_column(df):
+        '''
+        MODIFICAR EL NOMBRE DE LAS COLUMNAS QUE EMPIECEN EN 'i' PARA ELIMINAR ESTA PARTE
+        :return: el DataFrame con las columnas limpias
+        '''
+        for column in df:
+            if column.startswith('i'):
+                new = column.replace('i', '')
+                df[new] = df[column]
+            if column.endswith('1_txt'):
+                new = column.replace('1_txt', '')
+                df[new] = df[column]
+            if column.endswith('_txt'):
+                new = column.replace('_txt', '')
+                df[new] = df[column]
+        print('RENOMBRAR iCOLUMNAS  ----- EXITO' + '\n')
+        return df
+
