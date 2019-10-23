@@ -37,14 +37,21 @@ A parte los indicadores del mapa tendrán la información de la **CIUDAD**, **PA
     │  
     ├── + Paths.py : fichero en el que se guardan las rutas de lectura del dataset y guardado del   
     │                dataset final.
+    │                          
     ├── + ImportExport.py : clase dónde se guardan las funciones para descargar el csv, leerlo y   
     │                       exportar el nuevo csv final.  
+    │                          
     └── + RowsAnalysis.py : clase dónde se amacenan las funciones para saber el número de columnas 
                             del dataset, sacar la cantidad de nulos en cada columna del dataset y 
                             seleccionar las columnas con las que queremos trabajar del dataset.  
  + dataset 
     ┬
-    │                        
+    │  
+    ├── + globalterrorismdb.csv : csv inicial al cual se le realizarán funciones para limpiarlo y obtener  
+    │                             el csv final (globalterrorismdb_modified.csv).
+    │                          
+    ├── + globalterrorismdb_modified.csv : csv final con el que se trabajará y se entrenará el modelo. 
+    │                          
     └── + AnalisisDatos.ipynb : jupyter notebook para saber los valores de los dataset tanto del 
                                 inicial como del modificado, en este caso solo me interesaba el
                                 numero de registros.
