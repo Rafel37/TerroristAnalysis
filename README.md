@@ -14,7 +14,7 @@ https://www.kaggle.com/START-UMD/gtd
 + README.md : Descripción del proyecto
 
 + Machine Learning.ipynb : En este notebook normalizo los datos del dataset modificado y entreno un modelo 
-                           con un RandomForestClassifier.
+                           con un RandomForestClassifier usando la columna success (exito o no del ataque).
                            Finalmente pruebo el modelo a través de un input donde se introduce la ciudad y 
                            la fecha para que te responda si el ataque tendría exito o no.
 
