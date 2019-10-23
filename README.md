@@ -9,6 +9,15 @@ Dataset que se ha usado en el proyecto:
 
 https://www.kaggle.com/START-UMD/gtd
 
+## Tableau:
+
+Tableau donde muestro los ataques terroristas a traves de los años, consta de un mapa con los filtros de las **FECHAS** de los **TIPOS DE ATAQUE** Y  **PAIS** e(stos dos últimos se verán afectados con el filtro de fecha). <br /><br />
+A parte los indicadores del mapa tendrán la información de la **CIUDAD**, **PAIS**, **TIPO DE ATAQUE** Y **GRUPO TERRORISTA**.
+
+![Datos](MapaInfoCiudad.png)
+
+[Link SMFYD Public Tableau](https://public.tableau.com/profile/rafaelperez#!/vizhome/Book1_15702936581860/Dashboard1)
+
 ## Archivos:
 ```
 + README.md : Descripción del proyecto
